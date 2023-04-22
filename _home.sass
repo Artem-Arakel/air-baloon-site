@@ -1,0 +1,37 @@
+.header
+    padding-top: 8rem
+    margin-bottom: 13rem
+    @include respond(tab-land)
+        margin-bottom: 7rem
+
+.section-about
+    margin-bottom: 10rem
+    @include respond(tab-port)
+        margin-bottom: 40rem
+
+.section-adventure
+    background: linear-gradient(90deg, rgba($color-brown-light, 0.7), rgba($color-black, 0.7)), url(../img/Section-2-Background.jpg) center/cover no-repeat
+    position: relative
+    clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 86%)
+    padding: 25rem 0
+    height: 43vh
+    @include respond(tab-land)
+        padding: 20rem
+    @include respond(tab-port)
+        height: 149vh
+    @include respond(tab-port)
+        height: 86vh
+.section-tour
+    padding-top: 10rem
+    margin-bottom: 8rem
+
+.section-reviews
+    padding: 8rem 0
+    position: relative
+
+.section-book
+    padding: 2rem
+    background: linear-gradient(90deg, $color-brown-light, $color-black)
+
+.book-form
+    padding-bottom: 5rem

@@ -1,0 +1,33 @@
+.adventure-card
+    background-color: rgba($color-white ,.8)
+    padding: 2.5rem
+    border-radius: .5rem
+    box-shadow: $box-shadow
+    text-align: center
+    word-wrap: break-word
+    width: 65%
+    @include respond(tab-land)
+        width: 73%
+    @include respond(tab-port)
+        width: 90%
+    @include respond(phone)
+        width: 100%
+    &:hover
+        transform: translateY(-1.5rem) scale(1.03)
+        box-shadow: $box-shadow
+    &__icon
+        font-size: 6rem
+        background: linear-gradient(90deg, rgba($color-brown-light, 0.7) 0.03%, rgba($color-brown-dark, 0.7) 99.94%)
+        -webkit-background-clip: text
+        color: transparent
+        display: block
+.card
+    position: absolute
+    top: 30%
+    left: 5%
+    right: 5%
+    @include respond(tab-port)
+        top: 10%
+    @include respond(phone)
+        left: 0%
+        right: 0%
